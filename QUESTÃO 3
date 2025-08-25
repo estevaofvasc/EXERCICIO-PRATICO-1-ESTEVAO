@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang pt-BR>
+    <head>
+        <meta charset="UTC-8">
+        <title>Horário de aulas</title>
+    </head>
+    <body>
+        <h2>Tabela de horários</h2>
+        <table border="1">
+        <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quanatidade em estoque</th>
+        </tr>
+        <tr>
+            <td>Notebook</td>
+            <td>R$ 20.000,00</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Fone gamer</td>
+            <td>R$ 240,00</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>Faca Balística</td>
+            <td>R$ 300,00</td>
+            <td>120</td>
+        </tr>
+        </table>
+
+                <h2>Formulário de Pedidos</h2>
+        <form action = "pedidos.html" method = "post">
+            <label for ="cliente">Nome do cliente: </label> <br>
+            <input type="text" id="cliente" name="cliente" placeholder="Digite seu nome"> <br><br>
+            
+            <label for ="produto">Produto desejado</label><br>
+            <select id="produto" name="produto">
+                <option value="Notebook">Notebook</option>
+                <option value="Fone gamer">Fone gamer</option>
+                <option value="Faca Balística">Faca Balística</option>
+            </select> <br><br>
+
+            <label for="quantidade">Quantidade</label><br>
+            <input type="number" id="quantidade" name="quantidade" min="1" max="20"><br><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
